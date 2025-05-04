@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+<style>
+      body{
+            background-color: black;
+        }
+    
+        h1 {
+            color: white;
+        }
+    .accordion {
+      background-color: #eee;
+      color: #444;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+      transition: 0.4s;
+    }
+    
+    .active, .accordion:hover {
+      background-color: #ccc; 
+    }
+    
+    .panel {
+      padding: 0 18px;
+      display: none;
+      background-color: white;
+      overflow: hidden;
+    }
+    </style>
+    </head>
+    <body>
+    
+<!-- Başlık -->
+<h1 style="text-align: center;">SSS</h1>
+
+<!-- Dropdowns -->
+<div>
+  <ul style="text-align: center; font-size: xx-large;">
+  <a href="index.html" target="_blank" class="btn btn-dark">Ana Sayfa</a>
+  <a href="..." class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Urunler</a>
+  <ul class="dropdown-menu">
+  <li><a class="dropdown-item btn btn-dark" href="Kadin.html" target="_blank">Kadin</a></li>
+  <li><a class="dropdown-item btn btn-dark" href="Erkek.html" target="_blank">Erkek</a></li>
+  <li><a class="dropdown-item btn btn-dark" href="Cocuk.html" target="_blank">Cocuk</a></li></ul>
+  <a href="SSS.html" target="_blank" class="btn btn-dark">SSS</a>
+  <a href="İletisim.html" target="_blank" class="btn btn-dark">İletisim</a>
+  </div>
+  </ul>
+
+<br>
+
+
+<h2 style="text-align: center; color: white;">Sikca Sorulan Sorular</h2>
+
+<button class="accordion">Uye olmadan alisveris yapabilirmiyim ?</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">Odeme yontemleri hakkinda bilgi</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">İade süresi</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">Siparis bana ulasmadi. Ne yapabilirim ?</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</div>
+
+
+<button class="accordion">Urun degisim suresi</button>
+<div class="panel">
+  <p>Lorem Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
